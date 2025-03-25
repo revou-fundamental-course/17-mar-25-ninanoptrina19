@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nina Assignment Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Nina Segitiga Calculator</h1>
+        <section>
+            <p>
+                Hai sobat, welcome to my calculator!
+            </p>
+        </section>
+    </header>
+
+    <section>
+        <!-- Ini Title General -->
+        <div class="section-content">
+            <h3>Segitiga</h3>
+        </div>
+
+        <button href="#keliling-section" id="switch-keliling"><u>Switch ke Keliling Segitiga</u></button>
+
+        <section id="luas-section">
+            <!-- konten Atas Luas Segitiga -->
+            <section>
+                <div class="section-content">
+                    <h2>Luas Segitiga</h2>
+                </div>
+
+                <div class="formula-img">
+                    <img
+                        src="https://cdn-brilio-net.akamaized.net/real/2023/10/16/2130004/rumus-luas-segitiga-sama-sisi.png">
+                </div>
+
+                <p>Lorem Ipsum</p>
+            </section>
+
+            <!-- Pemisah Konten -->
+            <hr />
+
+            <!-- Konten Bawah Luas Segitiga -->
+            <section>
+                <header>
+                    <h2>Hitung Luas Segitiga</h2>
+                </header>
+
+                <form>
+                    <section>
+                        <div>
+                            <label>Alas:</label><input id="alas-input" type="number" />
+                        </div>
+
+                        <div>
+                            <label>Tinggi:</label><input id="tinggi-input" type="number" />
+                        </div>
+                    </section>
+
+                    <p>Diketahui: Lorem Ipsum...</p>
+
+                    <div class="button-responsive" style="display: flex;">
+                        <button type="button" onclick="validation();" id="calculate-btn">Hitung</button>
+                        <button type="button" id="reset-btn">Reset</button>
+                    </div>
+                </form>
+            </section>
+        </section>
+    </section>
+
+    <section id="keliling-section" style="padding-top: 32px;">
+        <!-- konten Atas Luas Segitiga -->
+        <section>
+            <div class="section-content">
+                <h2>Keliling Segitiga</h2>
+            </div>
+
+            <div class="formula-img">
+                <img
+                    src="https://cdn-brilio-net.akamaized.net/real/2023/10/16/2130004/rumus-luas-segitiga-sama-sisi.png">
+            </div>
+
+            <p>Lorem Ipsum</p>
+        </section>
+
+        <!-- Pemisah Konten -->
+        <hr />
+
+        <!-- Konten Bawah Luas Segitiga -->
+        <section>
+            <header>
+                <h2>Hitung Luas Segitiga</h2>
+            </header>
+
+            <form>
+                <section>
+                    <div>
+                        <label>Alas:</label><input />
+                    </div>
+
+                    <div>
+                        <label>Tinggi:</label><input />
+                    </div>
+                </section>
+
+                <p>Diketahui: Lorem Ipsum...</p>
+
+                <button type="button" onclick="validation();" id="calculate-btn">Hitung</button>
+                <button type="button" id="reset-btn">Reset</button>
+            </form>
+        </section>
+    </section>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

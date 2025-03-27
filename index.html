@@ -4,68 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nina Assignment Calculator</title>
+    <title>Niiiii Assignment Calculator</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
-        <h1>Welcome to Nina Segitiga Calculator</h1>
+        <h1>Welcome to Niiiii Persegi Calculator</h1>
         <section>
             <p>
                 Hai sobat, welcome to my calculator!
             </p>
+            <p> Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas  dan keliling bangun datar </p>
         </section>
     </header>
 
     <section>
         <!-- Ini Title General -->
         <div class="section-content">
-            <h3>Segitiga</h3>
+            <h3>Persegi</h3>
         </div>
+        
 
-        <button href="#keliling-section" id="switch-keliling"><u>Switch ke Keliling Segitiga</u></button>
+        <button href="#keliling-section" id="switch-keliling"><u>Switch ke Keliling Persegi</u></button>
 
         <section id="luas-section">
-            <!-- konten Atas Luas Segitiga -->
+            <!-- konten Atas Luas Persegi -->
             <section>
                 <div class="section-content">
-                    <h2>Luas Segitiga</h2>
+                    <h2>Luas Persegi</h2>
                 </div>
 
                 <div class="formula-img">
-                    <img
-                        src="https://cdn-brilio-net.akamaized.net/real/2023/10/16/2130004/rumus-luas-segitiga-sama-sisi.png">
+                    <img src="assets/persegi1.jpeg" alt="Gambar Persegi" >
+
                 </div>
 
-                <p>Lorem Ipsum</p>
+                <p>Rumus Luas Persegi yaitu: </p>
+                <div class="formula-img">
+                    <img
+                        src="assets/sisi.png" alt="Gambar Persegi">
+                </div>
+                <p> Dimana :
+                   <p> L = Luas </p> 
+                    <p>S = Sisi</p>
+                </p>
             </section>
 
             <!-- Pemisah Konten -->
             <hr />
 
-            <!-- Konten Bawah Luas Segitiga -->
+            <!-- Konten Bawah Luas Persegi -->
             <section>
                 <header>
-                    <h2>Hitung Luas Segitiga</h2>
+                    <h2>Hitung Luas Persegi</h2>
                 </header>
 
                 <form>
                     <section>
-                        <div>
-                            <label>Alas:</label><input id="alas-input" type="number" />
-                        </div>
-
-                        <div>
-                            <label>Tinggi:</label><input id="tinggi-input" type="number" />
-                        </div>
+                        <label>Masukkan Sisi untuk Luas:</label>
+                        <input id="Sisi-luas" type="number" placeholder="Masukkan panjang sisi" />
+                        <p>Diketahui: </p>
+                        <p id="Luas-output">Luas: -</p>
                     </section>
 
-                    <p>Diketahui: Lorem Ipsum...</p>
-
                     <div class="button-responsive" style="display: flex;">
-                        <button type="button" onclick="validation();" id="calculate-btn">Hitung</button>
-                        <button type="button" id="reset-btn">Reset</button>
+                        <button type="button" onclick="hitungLuas();">Hitung Luas</button>
+                        <button type="button" id="reset-btn" onclick="resetForm();">Reset</button>
+
                     </div>
                 </form>
             </section>
@@ -73,44 +79,48 @@
     </section>
 
     <section id="keliling-section" style="padding-top: 32px;">
-        <!-- konten Atas Luas Segitiga -->
+        <!-- konten Atas Luas Persegi -->
         <section>
             <div class="section-content">
-                <h2>Keliling Segitiga</h2>
+                <h2>Keliling Persegi</h2>
             </div>
 
             <div class="formula-img">
-                <img
-                    src="https://cdn-brilio-net.akamaized.net/real/2023/10/16/2130004/rumus-luas-segitiga-sama-sisi.png">
+                <img src="assets/persegi1.jpeg" alt="Gambar Persegi" >
+
             </div>
 
-            <p>Lorem Ipsum</p>
+            <p>Rumus Keliling Persegi yaitu: </p>
+                <div class="formula-img">
+                    <img
+                        src="assets/keliling.png" alt="rumus keliling">
+                </div>
+                <p> Dimana :
+                   <p> K = Keliling</p> 
+                    <p>S = Sisi</p>
         </section>
 
         <!-- Pemisah Konten -->
         <hr />
 
-        <!-- Konten Bawah Luas Segitiga -->
+        <!-- Konten Bawah Luas Persegi -->
         <section>
             <header>
-                <h2>Hitung Luas Segitiga</h2>
+                <h2>Hitung Keliling  Persegi</h2>
             </header>
 
             <form>
                 <section>
                     <div>
-                        <label>Alas:</label><input />
-                    </div>
-
-                    <div>
-                        <label>Tinggi:</label><input />
+                        <label>Masukkan Sisi untuk Keliling:</label>
+                        <input id="Sisi-keliling" type="number" placeholder="Masukkan panjang sisi" />
+                        <p>Diketahui:</p>
+                        <p id="Keliling-output">Keliling: -</p>
                     </div>
                 </section>
+                <button type="button" onclick="hitungKeliling();">Hitung Keliling</button>
+                <button type="button" id="reset-btn" onclick="resetForm();">Reset</button>
 
-                <p>Diketahui: Lorem Ipsum...</p>
-
-                <button type="button" onclick="validation();" id="calculate-btn">Hitung</button>
-                <button type="button" id="reset-btn">Reset</button>
             </form>
         </section>
     </section>

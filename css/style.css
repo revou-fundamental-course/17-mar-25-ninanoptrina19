@@ -1,5 +1,13 @@
 /* Ini CSS */
 
+.header>h1 {
+    margin: 0px;
+    background-color: aquamarine;
+    padding: 24px;
+    text-align: center;
+}
+
+
 .section-content {
     background-color: rgb(164, 59, 224);
     color: white;
@@ -26,7 +34,8 @@
 }
 
 img {
-    height: 100px;
+    height: 200px;
+    height: auto;
 }
 
 input {
